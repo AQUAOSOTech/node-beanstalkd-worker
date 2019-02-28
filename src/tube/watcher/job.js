@@ -16,6 +16,8 @@ function defer() {
   };
 }
 
+const DELAYED = 1;
+
 /*
  * A job class with extra commands only available to the connection that has reserved the job
  */
@@ -157,4 +159,4 @@ module.exports = class WatcherJob extends Job {
   }
 };
 
-module.exports.DELAYED = 1;
+module.exports.DELAYED = DELAYED;
